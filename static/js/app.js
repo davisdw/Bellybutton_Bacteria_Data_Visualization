@@ -2,26 +2,44 @@
 // Use the D3 library to read in samples.json from the 
 // URL https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json
 
-
-createBarPlot(); //Plots and Displays the Bar Charts
-createBubbleChart(); //Plots and Displays the Bubble Charts
-createDropdownOption(); //display list of paitent names (in IDs) in dropdown box
-getDemographicDataInfo(); // displays metadata of each paitent's demographic information 
-
-//importing the sample.json data file to verify data validity
-d3.json("samples.json").then(readSampleData => {
-    console.log(readSampleData);
-});
-
 /**
  *  First thing need is to read the sample data json file and validate 
     by displaying the samples json data
     Then Plot the Charts specified by requirements 
     Test and Display the Charts
- */
-  
-function createBarPlot() { 
-//plotting the values in a bar chart 
+    Create Dropdown and display each of the paitent's Demographic Info Data
+**/
+
+//initalizes the data to display the results
+function init() { 
+    //create the variable to store the drop down
+    let dropDownMenu = d3.select('#selDataset');
+    
+    //reads the data and test to confirm the data 
+    d3.json("samples.json").then((readSampleData) => {
+        console.log(readSampleData);
+        //
+        readSampleData.names.forEach(function(name) {
+            dropDownMenu.append("option").text(name).property("value");
+        });
+        createBarPlot(readSampleData.names[0]);
+        createBubbleChart(readSampleData.names[0]);
+        //dropDownOption(readSampleData.names[0]); 
+        createMetadataInfo(readSampleData.names[0]);
+    });
+}
+// function to handle the event change each time an new ID is selected, which will also reflect the rest of the data
+function optionChanged(id) {
+    createBarPlot(id);
+    createBubbleChart(id);
+    //dropDownOption(id); 
+    createMetadataInfo(id);
+}
+
+init(); //runs data
+
+//Plots and Displays the Bar Charts
+function createBarPlot(id) { 
 
     d3.json("samples.json").then(readSampleData =>  { 
     //console.log(readSampleData)
@@ -64,7 +82,8 @@ function createBarPlot() {
 
 };
 
-function createBubbleChart() {
+//Plots and Displays the Bubble Charts
+function createBubbleChart(id) {
 
     d3.json("samples.json").then(readSampleData =>  { 
         //console.log(readSampleData)
@@ -111,48 +130,50 @@ function createBubbleChart() {
  * Changing ID will display different metadata
  * ***/
 
-//retrive demographic metadata information and displays in box chart
-function getDemographicDataInfo() {
+// displays metadata of each paitent's demographic information 
+function createMetadataInfo(idName) {
+
+    let dropDownMenu = d3.select('#selDataset');
+    d3.json("samples.json").then((readSampleData) =>  { 
+
+        let metaData = readSampleData.metadata;
+        let displayMetaData = metaData.filter(info => info.id == idName)
+        let result = displayMetaData[0];
+        let panel = d3.select("#sample-metadata");
+        panel.html("");
+        Object.entries(result).forEach(([key, value]) => {
+        panel.append("h6").text(`${key}: ${value}`);
+        });
+    });      
+};
+
+/********
+ * function dropDownOption(id) {
 
     d3.json("samples.json").then((readMetaData) => {
 
         let metaData = readMetaData.metadata;
         //console.log(metaData); 
+       
+        //filters the data by id and compares the ID being selected to match
+        let demoResult = metaData.filter(meta => meta.id.toString() === id)[0];
+        //location where the Demographic Info Box is located in HTML
+        let demographicInfoBox = d3.select("sample-metadata");
+        //Clears the demographic data each time before selecting new ID
+        demographicInfoBox.html("");
+        //Grabs the Demographic Data with associated ID and appends it to box panel
+        Object.entries(demoResult).forEach((key) => {
+            demographicInfoBox.append("h5").text(key[0].toUpperCase() + ": " + key[1] + "\n");
 
-
+        });
     });
     
 }
-
-function createDropdownOption() {
-
-    let dropDownMenu = d3.select('selDataset')
-    d3.json("samples.json").then((readSampleData) =>  { 
-
-        //Loop through each name and append the name associated with value
-        //readSampleData.names.forEach(function (sample) {
-            //dropDownMenu.append('option').text(sample).property("value")    
-       // });
-
-    });
-
-};
+ ********/
 
 
-    //Creating an Dropdown menu to display each demographic data samples
-        //let metadataDropdown = document.getElementById('selDataset');
-        //let metadataDefaultOpt = document.getElementById('option');
-        //let options = readSampleData.names
 
-        //for(i = 0; i < options.length; i++) {
-          //let option = document.getElementById('option');
-              //option.text = options[i];
-             // option.value = options[i];
-           // metadataDropdown.add(option);
-       // };
-
-        //let metadata = readSampleData.metadata;
-       // console.log(metadata)
+   
 
 
 
