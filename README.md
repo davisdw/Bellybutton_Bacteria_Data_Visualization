@@ -6,15 +6,15 @@ BellyButton Data Analysis
 
 **FACTS ABOUT BELLY BUTTON: 
 
-Sometimes, an expanding belly can turn a pregnant woman's innie into an outie.
+    Sometimes, an expanding belly can turn a pregnant woman's innie into an outie.
 
-Belly buttons usually start out as "outies," and most pop in to form "innies." Only 10% of people have outies.
+    Belly buttons usually start out as "outies," and most pop in to form "innies." Only 10% of people have outies.
 
-A couple thousand people get belly button plastic surgery every year. And many of the 180,000 people who get tummy tucks per year have their navels touched up, too.
+    A couple thousand people get belly button plastic surgery every year. And many of the 180,000 people who get tummy tucks per year have their navels touched up, too.
 
-Belly button lint comes from our clothes. Men tend to have more because it gets caught in their belly hairs.
+    Belly button lint comes from our clothes. Men tend to have more because it gets caught in their belly hairs.
 
-Researchers studied 60 people's belly buttons and found almost 2,400 different species of bacteria.
+    Researchers studied 60 people's belly buttons and found almost 2,400 different species of bacteria.
 
 
 **Source: https://www.businessinsider.com/belly-button-science-2016-3#researchers-studied-60-peoples-belly-buttons-and-found-almost-2400-different-species-of-bacteria-9
