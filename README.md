@@ -21,7 +21,11 @@ Researchers studied 60 people's belly buttons and found almost 2,400 different s
 
 Below is the completed BellyButton Chart 
 
+
+
 ![D7BC9682-B11D-45BA-AB58-27CF24182B3C](https://github.com/davisdw/JavasScript_Virtualization_Challenge/assets/104311388/f10bdfd8-12ed-4532-8ea7-92faade94b1d)
+
+
 
 To access and interact with the Dashboard go to: https://davisdw.github.io/JavasScript_Virtualization_Challenge/
 
