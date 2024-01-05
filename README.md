@@ -23,6 +23,8 @@ Below is the completed BellyButton Chart
 
 ![D7BC9682-B11D-45BA-AB58-27CF24182B3C](https://github.com/davisdw/JavasScript_Virtualization_Challenge/assets/104311388/f10bdfd8-12ed-4532-8ea7-92faade94b1d)
 
+To access and interact with the Dashboard go to: https://davisdw.github.io/JavasScript_Virtualization_Challenge/
+
 Source from where the data came from: https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json
 
 Code was divided into six different functions: 
