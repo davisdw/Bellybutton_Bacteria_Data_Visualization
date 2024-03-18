@@ -1,4 +1,4 @@
-# JavasScript_Virtualization_Challenge
+# Bellybutton_Bacteria_Data_Visualization
 BellyButton Data Analysis
 
 ![bellybutton_bacteria_pic](https://github.com/davisdw/JavasScript_Virtualization_Challenge/assets/104311388/58d409f1-9f23-4db8-8c6c-ca7b7c359a52)
