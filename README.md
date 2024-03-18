@@ -27,7 +27,7 @@ Below is the completed BellyButton Chart
 
 
 
-To access and interact with the Dashboard go to: https://davisdw.github.io/JavasScript_Virtualization_Challenge/
+To access and interact with the Dashboard go to:(https://davisdw.github.io/Bellybutton_Bacteria_Data_Visualization/)
 
 Source from where the data came from: https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json
 
