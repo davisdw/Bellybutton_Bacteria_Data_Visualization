@@ -23,7 +23,7 @@ Below is the completed BellyButton Chart
 
 
 
-![D7BC9682-B11D-45BA-AB58-27CF24182B3C](https://github.com/davisdw/JavasScript_Virtualization_Challenge/assets/104311388/f10bdfd8-12ed-4532-8ea7-92faade94b1d)
+![D7BC9682-B11D-45BA-AB58-27CF24182B3C](https://github.com/davisdw/Bellybutton_Bacteria_Data_Visualization/assets/104311388/f10bdfd8-12ed-4532-8ea7-92faade94b1d)
 
 
 
